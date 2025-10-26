@@ -48,8 +48,3 @@ Develop a console-based Python application that manages product inventory, proce
 ## Run the main application:
     python main.py
 
-![alt text](image-1.png)
-
-![alt text](image.png)
-
-![alt text](product.png)
