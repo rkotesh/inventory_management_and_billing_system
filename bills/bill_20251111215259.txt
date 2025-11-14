@@ -1,0 +1,11 @@
+=== BILL ===
+Bill ID: bill_20251111215259
+DateTime: 2025-11-11 21:52:59
+
+PID    Name                            UnitPrice    Qty    LineTotal
+1      Vivo V20                       ₹45,000.00      2   ₹90,000.00
+
+Subtotal: ₹90,000.00
+Discount(10.0%): ₹9,000.00
+Total: ₹81,000.00
+Thank you!

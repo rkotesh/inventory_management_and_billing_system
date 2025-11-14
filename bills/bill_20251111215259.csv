@@ -1,0 +1,6 @@
+bill_id,datetime,product_id,name,unit_price,qty,line_total
+bill_20251111215259,2025-11-11 21:52:59,1,Vivo V20,45000.00,2,90000.00
+
+,,,SUBTOTAL,90000.00
+,,,DISCOUNT_10.0%,9000.00
+,,,TOTAL,81000.00

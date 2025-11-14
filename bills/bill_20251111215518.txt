@@ -1,0 +1,11 @@
+=== BILL ===
+Bill ID: bill_20251111215518
+DateTime: 2025-11-11 21:55:18
+
+PID    Name                            UnitPrice    Qty    LineTotal
+2      Lenovo V15                     ₹48,500.00      5  ₹242,500.00
+
+Subtotal: ₹242,500.00
+Discount(50.0%): ₹121,250.00
+Total: ₹121,250.00
+Thank you!

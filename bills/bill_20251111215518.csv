@@ -1,0 +1,6 @@
+bill_id,datetime,product_id,name,unit_price,qty,line_total
+bill_20251111215518,2025-11-11 21:55:18,2,Lenovo V15,48500.00,5,242500.00
+
+,,,SUBTOTAL,242500.00
+,,,DISCOUNT_50.0%,121250.00
+,,,TOTAL,121250.00
