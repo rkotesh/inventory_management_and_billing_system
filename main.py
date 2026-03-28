@@ -16,14 +16,20 @@ def product_menu():
         print("0. Back")
         choice = input("Choice: ").strip()
 
-        match choice:
-            case "1": add_product()
-            case "2": update_product()
-            case "3": delete_product()
-            case "4": search_products()
-            case "5": list_all_products()
-            case "0": return
-            case _: print("Invalid choice.")
+        if choice == "1":
+            add_product()
+        elif choice == "2":
+            update_product()
+        elif choice == "3":
+            delete_product()
+        elif choice == "4":
+            search_products()
+        elif choice == "5":
+            list_all_products()
+        elif choice == "0":
+            return
+        else:
+            print("Invalid choice.")
 
 
 def order_menu():
@@ -37,24 +43,28 @@ def order_menu():
         print("0. Back")
         choice = input("Choice: ").strip()
 
-        match choice:
-            case "1":
-                try:
-                    pid = int(input("Product ID: "))
-                    qty = int(input("Quantity: "))
-                    cart.add_item(pid, qty)
-                except ValueError:
-                    print("Invalid input.")
-            case "2":
-                try:
-                    pid = int(input("Product ID to remove: "))
-                    cart.remove_item(pid)
-                except ValueError:
-                    print("Invalid input.")
-            case "3": cart.list_cart()
-            case "4": checkout(cart); return
-            case "0": return
-            case _: print("Invalid choice.")
+        if choice == "1":
+            try:
+                pid = int(input("Product ID: "))
+                qty = int(input("Quantity: "))
+                cart.add_item(pid, qty)
+            except ValueError:
+                print("Invalid input.")
+        elif choice == "2":
+            try:
+                pid = int(input("Product ID to remove: "))
+                cart.remove_item(pid)
+            except ValueError:
+                print("Invalid input.")
+        elif choice == "3":
+            cart.list_cart()
+        elif choice == "4":
+            checkout(cart)
+            return
+        elif choice == "0":
+            return
+        else:
+            print("Invalid choice.")
 
 
 def sales_menu():
@@ -65,11 +75,14 @@ def sales_menu():
         print("0. Back")
         choice = input("Choice: ").strip()
 
-        match choice:
-            case "1": report_total_sales_by_date()
-            case "2": report_low_stock()
-            case "0": return
-            case _: print("Invalid choice.")
+        if choice == "1":
+            report_total_sales_by_date()
+        elif choice == "2":
+            report_low_stock()
+        elif choice == "0":
+            return
+        else:
+            print("Invalid choice.")
 
 
 def main_menu():
@@ -82,12 +95,17 @@ def main_menu():
         print("0. Exit")
         choice = input("Choice: ").strip()
 
-        match choice:
-            case "1": product_menu()
-            case "2": order_menu()
-            case "3": sales_menu()
-            case "0": print("Goodbye."); sys.exit(0)
-            case _: print("Invalid choice.")
+        if choice == "1":
+            product_menu()
+        elif choice == "2":
+            order_menu()
+        elif choice == "3":
+            sales_menu()
+        elif choice == "0":
+            print("Goodbye.")
+            sys.exit(0)
+        else:
+            print("Invalid choice.")
 
 
 if __name__ == "__main__":
